@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1350">
+    <title>이솔책방</title>
+
+     <!--애니메이션-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--css파일-->
+    <link rel="stylesheet" href="css/sub1.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!--제이쿼리 라이브러리파일-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--서브메뉴 제이쿼리-->
+    <script type="text/javascript">
+		$(document).ready(function() {
+            $(function(){
+            $(".gnb>li").hover(function(){
+                $("#sub").stop().slideDown();
+            },//마우스 올렸을때
+            function(){
+                $("#sub").stop().slideUp();
+            });//마우스 나갔을때
+            });			
+		});
+	</script>
+</head>
+<body>
+    <div id="top">
+        <div id="top_inner">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="이솔책방 로고"></a></h1>
+            <ul class="login">
+                <li><a href="#"><img src="images/top1.png" alt="로그인"></a></li>
+                <li><a href="#"><img src="images/top2.png" alt="회원가입"></a></li>
+                <li><a href="#"><img src="images/top3.png" alt="검색"></a></li>
+            </ul>
+        </div><!--top_inner-->
+    </div><!--top-->
+    <div id="header">
+        <div id="header_inner">
+            <ul class="gnb">
+                <li><a href="sub1.html">ABOUT US</a>
+                    <div id="sub">
+                        <div id="sub_inner">
+                            <ul class="list1">
+                                <li><a href="sub1.html#esol_">이솔책방</a></li>
+                                <li><a href="sub1.html#with_">함께하는 사람들</a></li>
+                            </ul>
+                            <ul class="list2">
+                                <li><a href="sub2.html#books_">책</a></li>
+                                <li><a href="sub2.html#goods_">문구 / 잡화</a></li>
+                                <li><a href="sub2.html#egoods_">이솔굿즈</a></li>
+                            </ul>
+                            <ul class="list3">
+                                <li><a href="sub3.html#booktalk_">작가와의 만남</a></li>
+                                <li><a href="sub3.html#workshop_">워크샵 / 원데이클래스</a></li>
+                            </ul>
+                            <ul class="list4">
+                                <li><a href="sub4.html#bookclub_">이솔 북클럽</a></li>
+                                <li><a href="sub4.html#magazine_">월간이솔</a></li>
+                            </ul>
+                            <ul class="list5">
+                                <li><a href="sub5.html#notice_">공지사항</a></li>
+                                <li><a href="sub5.html#qna_">1:1 문의</a></li>
+                                <li><a href="sub5.html#review_">리뷰</a></li>
+                                <li><a href="sub5.html#event_">이벤트</a></li>
+                            </ul>
+                        </div><!--sub_inner-->
+                    </div><!--sub-->
+                
+                </li>
+                <li><a href="sub2.html">STORE</a></li>
+                <li><a href="sub3.html">PROGRAM</a></li>
+                <li><a href="sub4.html">MEMBERSHIP</a></li>
+                <li><a href="sub5.html">COMMUNITY</a></li>
+            </ul>
+        </div><!--header_inner-->
+    </div><!--header-->
+    <div id="sub_b">
+        <h1>ABOUT US <span id="esol_"></span></h1>
+        <img src="images/sub_bg1.jpg" alt="서브타이틀 배경1">
+    </div><!--sub_b-->
+    <div id="esol">
+        <h2 class="sub_title">이솔책방</h2>
+        <P class="sub_info">독립출판물 중심의 온라인 전문 서점</P>
+        <ul data-aos="fade" data-aos-duration="800">
+           <li><img src="images/about1.png" alt="이솔책방소개이미지1"></li>
+           <li><img src="images/about2.png" alt="이솔책방소개이미지2"></li>
+           <li><img src="images/about3.png" alt="이솔책방소개이미지3"></li>
+           <li><img src="images/about4.png" alt="이솔책방소개이미지4"></li>
+        </ul>
+        <span id="with_"></span>
+        <p class="e_text" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="500">
+            이솔책방은 책 읽기를 좋아하고 책에 대해 함께 나누고 싶은 사람들을 위한 온라인 서점입니다. <br>
+            <span>다양한 독립출판물을 구매</span>할 수 있을 뿐 아니라 취향에 맞는 <span>책을 추천</span> 받고 <span>온라인 독서모임</span>을 통해 책을 읽고 편하게 소통할 수 있으며, <br>
+            작가 초청 북토크, 독립출판 워크샵, 원데이 클래스 등 <span>책 문화 프로그램</span>을 통해 책에 대한 유익한 정보와 감상도 나눌 수 있는 공간입니다. 
+        </p>
+    </div><!--esol-->
+    <div id="with">
+        <div id="with_inner">
+            <h2 class="sub_title">함께하는 사람들</h2>
+            <P class="sub_info">이솔책방과 책으로 이어진 사람들</P>
+            <div id="author">
+                <h3>Author 작가</h3>
+                <p>이솔책방에서 작품으로 만나볼 수 있는 다양한 장르의 작가님들을 소개합니다.</p>
+                <ul class="author">
+                    <li class="au1" data-aos="flip-right" data-aos-duration="800"><a href="#"><img src="images/author1.jpg" alt="작가1">
+                    <div class="h_box"></div><!--h_box--></a>
+                    <div class="w_box">
+                        <p>김초엽 <br>
+                            <span>&lt;우리가 빛의 속도로 갈 수 없다면&gt;</span>
+                        </p>
+                    </div><!--w_box-->
+                    </li>
+                    <li class="au2" data-aos="flip-left" data-aos-duration="800"><a href="#"><img src="images/author2.jpg" alt="작가2">
+                        <div class="h_box"></div><!--h_box--></a>
+                        <div class="w_box">
+                            <p>박상영 <br>
+                                <span>&lt;대도시의 사랑법&gt;</span>
+                            </p>
+                        </div><!--w_box-->
+                    </li>
+                    <li class="au3" data-aos="flip-right" data-aos-duration="800"><a href="#"><img src="images/author3.jpg" alt="작가3">
+                        <div class="h_box"></div><!--h_box--></a>
+                        <div class="w_box">
+                            <p>장류진 <br>
+                                <span>&lt;일의 기쁨과 슬픔&gt;</span>
+                            </p>
+                        </div><!--w_box-->
+                    </li>
+                    <li class="au4" data-aos="flip-left" data-aos-duration="800"><a href="#"><img src="images/author4.jpg" alt="작가4">
+                        <div class="h_box"></div><!--h_box--></a>
+                        <div class="w_box">
+                            <p>정세랑 <br>
+                                <span>&lt;지구에서 한아뿐&gt;</span>
+                            </p>
+                        </div><!--w_box-->
+                    </li>
+                </ul>
+            </div><!--author-->
+            <div id="company">
+                <h3>Company 회사</h3>
+                <p>이솔책방에 입점 또는 협력하는 회사들을 소개합니다.</p>
+                <ul class="c_list1" data-aos="fade" data-aos-duration="500">
+                    <li class="com1"><a href="#"><img src="images/company1.jpg" alt="회사1">
+                    <div class="h_box2"></div><!--h_box2-->
+                    </a></li>
+                    <li class="com2"><a href="#"><img src="images/company2.jpg" alt="회사2">
+                    <div class="h_box2"></div><!--h_box2-->
+                    </a></li>
+                    <li class="com3"><a href="#"><img src="images/company3.jpg" alt="회사3">
+                    <div class="h_box2"></div><!--h_box2-->
+                    </a></li>
+                    <li class="com4"><a href="#"><img src="images/company4.jpg" alt="회사4">
+                    <div class="h_box2"></div><!--h_box2-->
+                    </a></li>                    
+                </ul>
+                <ul class="c_list2" data-aos="fade" data-aos-duration="500">
+                    <li class="com1"><a href="#"><img src="images/company5.jpg" alt="회사5">
+                    <div class="h_box2"></div><!--h_box2-->
+                    </a></li>
+                    <li class="com2"><a href="#"><img src="images/company6.jpg" alt="회사6">
+                    <div class="h_box2"></div><!--h_box2-->
+                    </a></li>
+                    <li class="com3"><a href="#"><img src="images/company7.jpg" alt="회사7">
+                    <div class="h_box2"></div><!--h_box2-->
+                    </a></li>
+                    <li class="com4"><a href="#"><img src="images/company8.jpg" alt="회사8">
+                    <div class="h_box2"></div><!--h_box2-->
+                    </a></li>                    
+                </ul>
+            </div><!--company-->
+        </div><!--with_inner-->
+    </div><!--with-->
+
+
+
+
+    <div id="footer"> 
+        <div id="footer_inner">
+            <ul class="sns">
+                <li><a href="#"><img src="images/sns1.png" alt="sns1"></a></li>
+                <li><a href="#"><img src="images/sns2.png" alt="sns2"></a></li>
+                <li><a href="#"><img src="images/sns3.png" alt="sns3"></a></li>
+                <li><a href="#"><img src="images/sns4.png" alt="sns4"></a></li>
+            </ul>
+            <div class="copyright">
+                <h1><a href="index.html"><img src="images/f_logo.png" alt="푸터로고"></a></h1>
+                <div class="f_text">
+                    <ul class="c_text">
+                        <li><a href="#">이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <p>상호명 : 이솔책방 | 대표자 : 정희진 | 주소 : 경기도 파주시 회동길 252-1 바하빌딩 201호 <br>
+                        사업자번호 : 199-20-32900 | 통신판매업신고번호 : 2022-경기파주-00217
+                    </p>
+                    <p>COPYRIGHTⓒ ESOLBOOKS SERVICE INC. ALL RIGHTS RESERVED</p>
+                </div><!--f_text-->
+            </div><!--copyright-->
+        </div><!--footer_inner-->
+    </div><!--footer-->
+
+    <script>
+        AOS.init();
+        </script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>이솔책방</title>
+
+     <!--애니메이션-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     
+     <!--css 파일-->
+    <link rel="stylesheet" href="css/sub2.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!--제이쿼리 라이브러리파일-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--서브메뉴 제이쿼리-->
+    <script type="text/javascript">
+		$(document).ready(function() {
+            $(function(){
+            $(".gnb>li").hover(function(){
+                $("#sub").stop().slideDown();
+            },//마우스 올렸을때
+            function(){
+                $("#sub").stop().slideUp();
+            });//마우스 나갔을때
+            });	
+		});
+	</script>
+</head>
+<body>
+    <div id="top">
+        <div id="top_inner">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="이솔책방 로고"></a></h1>
+            <ul class="login">
+                <li><a href="#"><img src="images/top1.png" alt="로그인"></a></li>
+                <li><a href="#"><img src="images/top2.png" alt="회원가입"></a></li>
+                <li><a href="#"><img src="images/top3.png" alt="검색"></a></li>
+            </ul>
+        </div><!--top_inner-->
+    </div><!--top-->
+    <div id="header">
+        <div id="header_inner">
+            <ul class="gnb">
+                <li><a href="sub1.html">ABOUT US</a>
+                    <div id="sub">
+                        <div id="sub_inner">
+                            <ul class="list1">
+                                <li><a href="sub1.html#esol_">이솔책방</a></li>
+                                <li><a href="sub1.html#with_">함께하는 사람들</a></li>
+                            </ul>
+                            <ul class="list2">
+                                <li><a href="sub2.html#books_">책</a></li>
+                                <li><a href="sub2.html#goods_">문구 / 잡화</a></li>
+                                <li><a href="sub2.html#egoods_">이솔굿즈</a></li>
+                            </ul>
+                            <ul class="list3">
+                                <li><a href="sub3.html#booktalk_">작가와의 만남</a></li>
+                                <li><a href="sub3.html#workshop_">워크샵 / 원데이클래스</a></li>
+                            </ul>
+                            <ul class="list4">
+                                <li><a href="sub4.html#bookclub_">이솔 북클럽</a></li>
+                                <li><a href="sub4.html#magazine_">월간이솔</a></li>
+                            </ul>
+                            <ul class="list5">
+                                <li><a href="sub5.html#notice_">공지사항</a></li>
+                                <li><a href="sub5.html#qna_">1:1 문의</a></li>
+                                <li><a href="sub5.html#review_">리뷰</a></li>
+                                <li><a href="sub5.html#event_">이벤트</a></li>
+                            </ul>
+                        </div><!--sub_inner-->
+                    </div><!--sub-->
+                
+                </li>
+                <li><a href="sub2.html">STORE</a></li>
+                <li><a href="sub3.html">PROGRAM</a></li>
+                <li><a href="sub4.html">MEMBERSHIP</a></li>
+                <li><a href="sub5.html">COMMUNITY</a></li>
+            </ul>
+        </div><!--header_inner-->
+    </div><!--header-->
+    <div id="sub_b">
+        <h1>STORE<span id="books_"></span></h1>
+        <img src="images/sub_bg2.jpg" alt="서브타이틀 배경2">
+    </div><!--sub_b-->
+    <div id="books">
+        <h2 class="sub_title">BOOKS</h2>
+        <p class="sub_info">책</p>
+        <ol>
+            <li># 독립출판</li>
+            <li># 단행본</li>
+        </ol>
+        <ul class="b_list1">
+            <li class="b1"><img src="images/books1.jpg" alt="책1">
+                <div class="h_box1">
+                    <p>12,600원</p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box1-->
+            </li>
+            <li class="b2"><img src="images/books2.jpg" alt="책2">
+                <div class="h_box1">
+                    <p>13,320원</p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box1-->
+            </li>
+            <li class="b3"><img src="images/books3.jpg" alt="책3">
+                <div class="h_box1">
+                    <p>12,600원</p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box1-->
+            </li>
+            <li class="b4"><img src="images/books4.jpg" alt="책4">
+                <div class="h_box1">
+                    <p>13,000원</p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box1-->
+            </li>
+        </ul><!--b_list1-->
+        <ul class="bt_list1">
+            <li class="b_text">
+                <h4>시선으로부터,</h4>
+                <p>
+                    <span>정세랑 / 문학동네</span> <br>
+                    “이 소설은 무엇보다 20세기를 살아낸 여자들에게..
+                </p>
+            </li>
+            <li class="b_text">
+                <h4>여자 둘이 살고 있습니다 </h4>
+                <p>
+                    <span>김하나, 황선우 / 위즈덤하우스</span> <br>
+                    이 땅의 모든 1인 가구들에게 보내는 듀엣 응원가..
+                </p>
+            </li>
+            <li class="b_text">
+                <h4>우리가 빛의 속도로 갈 수 없다면</h4>
+                <p>
+                    <span>김초엽 / 허블</span> <br>
+                    지난 겨울까지 바이오센서를 만드는 과학도였던..
+                </p>
+            </li>
+            <li class="b_text">
+                <h4>나만의 방이 필요해</h4>
+                <p>
+                    <span>유세린 / 독립출판</span> <br>
+                    이 책은 '행복할수록 죄책감을 느끼는 사람을 위한..
+                </p>
+            </li>
+        </ul><!--bt_list1-->
+        <ul class="b_list2">
+            <li class="b5"><img src="images/books5.jpg" alt="책5">
+                <div class="h_box1">
+                    <p>13,320원</p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box1-->
+            </li>
+            <li class="b6"><img src="images/books6.jpg" alt="책6">
+                <div class="h_box1">
+                    <p>5,000원</p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box1-->
+            </li>
+            <li class="b7"><img src="images/books7.jpg" alt="책7">
+                <div class="h_box1">
+                    <p>14,400원</p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box1-->
+            </li>
+            <li class="b8"><img src="images/books8.jpg" alt="책8">
+                <div class="h_box1">
+                    <p>9,000원</p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box1-->
+            </li>
+        </ul><!--b_list2-->
+        <ul class="bt_list2">
+            <li class="b_text">
+                <h4>우아하고 호쾌한 여자 축구</h4>
+                <p>
+                    <span>김혼비 / 민음사</span> <br>
+                    여기 축구를 좋아하는 사람들이 있습니다. 그리고 ..
+                </p>
+            </li>
+            <li class="b_text">
+                <h4>시인 할머니의 두근두근 사랑 </h4>
+                <p>
+                    <span>황보출 / 푸른어머니학교</span> <br>
+                    시인 황보출 할머니는 시골마을에서 태어나 자라..
+                </p>
+            </li>
+            <li class="b_text">
+                <h4>클래식을 처음 듣는 당신에게</h4>
+                <p>
+                    <span>박종호 / 풍월당</span> <br>
+                    클래식 듣기의 처음을 이야기한다. 처음이기에 꼭..
+                </p>
+            </li>
+            <li class="b_text">
+                <h4>야시</h4>
+                <p>
+                    <span>남근영 / 독립출판</span> <br>
+                    야시, 여우의 경상도 사투리. 가끔 여자에 비유하기..
+                    <span id="goods_"></span>
+                </p>
+            </li>
+        </ul><!--bt_list2-->
+        <ul class="plus">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">▶</a></li>
+        </ul>
+    </div><!--books-->
+    <div id="goods">
+        <h2 class="sub_title">GOODS</h2>
+        <p class="sub_info">문구 / 잡화</p>
+        <ul class="g_list1">
+            <li class="g1"><img src="images/goods1.jpg" alt="굿즈1">
+                <div class="h_box2">
+                    <p>
+                        [브론테] 오늘의 필사 <br>
+                        3,500원
+                    </p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box2-->
+            </li>
+            <li class="g2"><img src="images/goods2.jpg" alt="굿즈2">
+                <div class="h_box2">
+                    <p>
+                        [책발전소] 북샵 디퓨저 <br>
+                        42,000원
+                    </p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box2-->
+            </li>
+            <li class="g3"><img src="images/goods3.jpg" alt="굿즈3">
+                <div class="h_box2">
+                    <p>
+                        [책발전소] 데일리 다이어리 <br>
+                        16,000원
+                    </p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box2-->
+            </li>
+        </ul><!--g_list1-->
+        <ul class="g_list2">
+            <li class="g1"><img src="images/goods4.jpg" alt="굿즈4">
+                <div class="h_box2">
+                    <p>
+                        [북티크] 오늘의 필사 <br>
+                        3,500원
+                    </p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box2-->
+            </li>
+            <li class="g2"><img src="images/goods5.jpg" alt="굿즈5">
+                <div class="h_box2">
+                    <p>
+                        [북스테이션] 독서대 <br>
+                        22,800원
+                    </p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box2-->
+            </li>
+            <li class="g3"><img src="images/goods6.jpg" alt="굿즈6">
+                <div class="h_box2">
+                    <p>
+                        [자화상] 빨강머리 앤 북퍼퓸 <br>
+                        16,900원
+                    </p>
+                    <a href="#">구매하기</a>
+                </div><!--h_box2-->
+            </li>
+        </ul><!--g_list2-->
+        <ul class="plus">
+            <li><a href="#">1</a><span id="egoods_"></span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">▶</a></li>
+        </ul>
+    </div><!--goods-->
+    <div id="egoods" data-aos="fade-down" data-aos-duration="800">
+        <div id="egoods_inner">
+            <div class="ebox1">
+                <h2 class="sub_title1">ESOL ONLY</h2>
+                <p class="sub_info1">이솔 굿즈</p>
+                <p class="sub_info2">
+                    이솔책방에서만 구매할 수 있는 <br>
+                    자체 제작 상품들을 만나보세요!
+                </p>
+            </div><!--ebox1-->
+            <div class="ebox2">
+                <div class="eg1">
+                    <img src="images/e_goods1.jpg" alt="이솔굿즈1">
+                    <div class="e_text">
+                        <h4>이솔 에코백</h4>
+                        <p>
+                            가볍고 넉넉한 사이즈에 튼튼하고 <br>
+                            실용적인 데일리 에코백
+                        </p>
+                        <h5>24,000원</h5>
+                        <a href="#">구매하기</a>
+                    </div><!--e_text-->
+                </div><!--eg1-->
+                <div class="eg3">
+                    <img src="images/e_goods3.jpg" alt="이솔굿즈3">
+                    <div class="e_text">
+                        <h4>이솔 마스킹 테이프</h4>
+                        <p>
+                            책에 관한 명언이 새겨진 <br>
+                            48mmX40m 마스킹 테이프
+                        </p>
+                        <h5>4,500원</h5>
+                        <a href="#">구매하기</a>
+                    </div><!--e_text-->
+                </div><!--eg3-->
+            </div><!--ebox2-->
+            <div class="ebox3">
+                <div class="eg2">
+                    <img src="images/e_goods2.jpg" alt="이솔굿즈2">
+                    <div class="e_text">
+                        <h4>이솔 핀버튼</h4>
+                        <p>
+                            가방, 파우치 어디에나 잘 어울리는 <br>
+                            이솔책방 로고 원형 핀버튼
+                        </p>
+                        <h5>3,000원</h5>
+                        <a href="#">구매하기</a>
+                    </div><!--e_text-->
+                </div><!--eg2-->
+                <div class="eg4">
+                    <img src="images/e_goods4.jpg" alt="이솔굿즈4">
+                    <div class="e_text">
+                        <h4>2022 이솔 다이어리</h4>
+                        <p>
+                            심플한 디자인에 친환경 종이로 만든 <br>
+                            세가지 컬러 다이어리
+                        </p>
+                        <h5>15,000원</h5>
+                        <a href="#">구매하기</a>
+                    </div><!--e_text-->
+                </div><!--eg4-->
+            </div><!--ebox3-->
+        </div><!--egoods_inner-->
+    </div><!--egoods-->
+    <div id="footer"> 
+        <div id="footer_inner">
+            <ul class="sns">
+                <li><a href="#"><img src="images/sns1.png" alt="sns1"></a></li>
+                <li><a href="#"><img src="images/sns2.png" alt="sns2"></a></li>
+                <li><a href="#"><img src="images/sns3.png" alt="sns3"></a></li>
+                <li><a href="#"><img src="images/sns4.png" alt="sns4"></a></li>
+            </ul>
+            <div class="copyright">
+                <h1><a href="index.html"><img src="images/f_logo.png" alt="푸터로고"></a></h1>
+                <div class="f_text">
+                    <ul class="c_text">
+                        <li><a href="#">이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <p>상호명 : 이솔책방 | 대표자 : 정희진 | 주소 : 경기도 파주시 회동길 252-1 바하빌딩 201호 <br>
+                        사업자번호 : 199-20-32900 | 통신판매업신고번호 : 2022-경기파주-00217
+                    </p>
+                    <p>COPYRIGHTⓒ ESOLBOOKS SERVICE INC. ALL RIGHTS RESERVED</p>
+                </div><!--f_text-->
+            </div><!--copyright-->
+        </div><!--footer_inner-->
+    </div><!--footer-->
+
+    <script>
+        AOS.init();
+        </script>
+</body>
+</html>

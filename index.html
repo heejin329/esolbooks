@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>이솔책방</title>
+    <!--2. 연결 시켜야 할 파일을 연결 시킨다. 복사해서 head안에 본인 css파일 위에 위치 시킨다.-->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!--애니메이션-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--내가 만든 css파일-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    	<!--제이쿼리 라이브러리파일-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<!--탭 제이쿼리-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			//처음들어갔을때 모습 만들기...
+			$(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+			$("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+			$(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+			//On Click Event
+			$("ul.tabs li").click(function() {
+
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+				$(".tab_content").hide(); //모든 contents들 숨김
+
+				var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+				/*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+				.find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.*/
+				$(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+				return false;
+			});
+
+		});
+
+        //서브메뉴 제이쿼리
+        $(function(){
+            $(".gnb>li").hover(function(){
+                $("#sub").stop().slideDown();
+            },//마우스 올렸을때
+            function(){
+                $("#sub").stop().slideUp();
+            });//마우스 나갔을때
+        });
+	</script>
+</head>
+<body>
+    <div id="top">
+        <div id="top_inner">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="이솔책방 로고"></a></h1>
+            <ul class="login">
+                <li><a href="#"><img src="images/top1.png" alt="로그인"></a></li>
+                <li><a href="#"><img src="images/top2.png" alt="회원가입"></a></li>
+                <li><a href="#"><img src="images/top3.png" alt="검색"></a></li>
+            </ul>
+        </div><!--top_inner-->
+    </div><!--top-->
+    <div id="header">
+        <div id="header_inner">
+            <ul class="gnb">
+                <li><a href="sub1.html">ABOUT US</a>
+                    <div id="sub">
+                        <div id="sub_inner">
+                            <ul class="list1">
+                                <li><a href="sub1.html#esol_">이솔책방</a></li>
+                                <li><a href="sub1.html#with_">함께하는 사람들</a></li>
+                            </ul>
+                            <ul class="list2">
+                                <li><a href="sub2.html#books_">책</a></li>
+                                <li><a href="sub2.html#goods_">문구 / 잡화</a></li>
+                                <li><a href="sub2.html#egoods_">이솔굿즈</a></li>
+                            </ul>
+                            <ul class="list3">
+                                <li><a href="sub3.html#booktalk_">작가와의 만남</a></li>
+                                <li><a href="sub3.html#workshop_">워크샵 / 원데이클래스</a></li>
+                            </ul>
+                            <ul class="list4">
+                                <li><a href="sub4.html#bookclub_">이솔 북클럽</a></li>
+                                <li><a href="sub4.html#magazine_">월간이솔</a></li>
+                            </ul>
+                            <ul class="list5">
+                                <li><a href="sub5.html#notice_">공지사항</a></li>
+                                <li><a href="sub5.html#qna_">1:1 문의</a></li>
+                                <li><a href="sub5.html#review_">리뷰</a></li>
+                                <li><a href="sub5.html#event_">이벤트</a></li>
+                            </ul>
+                        </div><!--sub_inner-->
+                    </div><!--sub-->
+                
+                </li>
+                <li><a href="sub2.html">STORE</a></li>
+                <li><a href="sub3.html">PROGRAM</a></li>
+                <li><a href="sub4.html">MEMBERSHIP</a></li>
+                <li><a href="sub5.html">COMMUNITY</a></li>
+            </ul>
+        </div><!--header_inner-->
+    </div><!--header-->
+    
+    <!--1. 구조와 class의 이름을 알맞게 넣어준다.-->
+		<div class="swiper mb"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+			<div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+				<div class="swiper-slide">
+					<!--swiper-slide는 필수 클래스-->
+					<a href="sub1.html#about_"><img src="images/mb1.jpg" alt="메인배너1"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="sub5.html#event_"><img src="images/mb2.jpg" alt="메인배너2"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="sub3.html#workshop_"><img src="images/mb3.jpg" alt="메인배너3"></a>
+				</div>
+			</div>
+			<!--화살표추가-->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<!--도트를 추가하고 싶을때-->
+			<div class="swiper-pagination"></div>
+		</div><!--mb E-->
+    <div id="best">
+        <h2 class="sub_title">BEST</h2>
+        <P class="sub_info">이솔책방에서 지금 가장 인기있는 책</P>
+        <ul class="bestbook">
+            <li><a href="sub2.html#books_">
+                <img src="images/best1.jpg" alt="best1">
+                <h3>노마드랜드</h3>
+                <p>제시카 브루더 / 엘리</p>
+            </a></li>
+            <li><a href="sub2.html#books_">
+                <img src="images/best2.jpg" alt="best2">
+                <h3>달까지 가자</h3>
+                <p>장류진 / 창비</p>
+            </a></li>
+            <li><a href="sub2.html#books_">
+                <img src="images/best3.jpg" alt="best3">
+                <h3>갑자기 어른</h3>
+                <p>김져니 / 독립출판</p>
+            </a></li>
+            <li><a href="sub2.html#books_">
+                <img src="images/best4.jpg" alt="best4">
+                <h3>나만의 방이 필요해</h3>
+                <p>유세린 / 독립출판</p>
+            </a></li>
+            <li><a href="sub2.html#books_">
+                <img src="images/best5.jpg" alt="best5">
+                <h3>엄마 안내서</h3>
+                <p>이상언, 이상희 / 샤브샤브 시스터즈</p>
+            </a></li>
+        </ul>
+    </div><!--best-->
+    <div id="recommend">
+        <h2 class="sub_title">RECOMMEND</h2>
+        <P class="sub_info">이솔의 책방지기들이 추천하는 책</P>
+
+    </div><!--recommend-->
+    <div id="genre"><!--이 박스는 제이쿼리에서 쓰이지 않으므로, 이름 변경해서 사용하세요~-->	
+        <!--탭 메뉴 영역 -->
+        <ul class="tabs">
+            <li><a href="#tab1" class="tab_btn">시/에세이</a></li>
+            <li><a href="#tab2" class="tab_btn">소설</a></li>
+            <li><a href="#tab3" class="tab_btn">동화/그림책</a></li>
+        </ul>
+    
+        <!--탭 콘텐츠 영역 -->
+        <div class="tab_container">
+    
+            <div id="tab1" class="tab_content">
+                <!--Content-->
+              <h1 data-aos="fade" data-aos-duration="800"><img src="images/recom1.jpg" alt="추천책1"></h1>
+              <div class="tab_text" data-aos="fade" data-aos-duration="800" data-aos-delay="300">
+                  <ul>
+                      <li>
+                          <img src="images/star5.jpg" alt="별점5">
+                          <p>서정적인 밤을 닮은 시집</p>
+                      </li>
+                      <li>
+                        <img src="images/star4.jpg" alt="별점4">
+                        <p>침대 머리맡에 두고 생각날때마다 꺼내보고 싶은 책</p>
+                    </li>
+                    <li>
+                        <img src="images/star45.jpg" alt="별점45">
+                        <p>아무 생각없이 읽다가 얻어가는 한 가지</p>
+                    </li>
+                  </ul>
+                  <div class="g_box">
+                    <div class="g_box1">
+                        <h2><span>책 소개</span></h2>
+                        <div class="g_text">
+                            <h3>야시</h3>
+                            <p>
+                                남근영 / 독립출판 <br>
+                                704호의 작은 방에서 잠을 기다리며 쓴, <br>
+                                종이벽 너머로 전하는 가장 솔직한 이야기.
+                            </p>
+                        </div><!--g_text-->
+                    </div><!--g_box1-->
+                    <div class="g_box2">
+                        <h2><span>추천평</span></h2>
+                        <p>
+                            이 시집에 담긴 시들은 지난날의 소중한 기억을 떠올리게 합니다. <br>
+                            혼자 남은 어느 밤, 이 책을 펼치면 <br>
+                            그때의 추억이 따뜻한 위로를 건넬 거예요.
+                        </p>
+                    </div><!--g_box2-->
+                  </div><!--g_box-->
+              </div><!--tab_text-->
+            </div><!--tab1-->
+
+            <div id="tab2" class="tab_content">
+                <!--Content-->
+              <h1><img src="images/recom2.jpg" alt="추천책2"></h1>
+              <div class="tab_text">
+                  <ul>
+                      <li>
+                          <img src="images/star5.jpg" alt="별점5">
+                          <p>SF와 사회적 문제를 여성 인물 중심으로 풀어나간게 좋았다</p>
+                      </li>
+                      <li>
+                        <img src="images/star5.jpg" alt="별점5">
+                        <p>SF소설이 이렇게 재미있다니!</p>
+                    </li>
+                    <li>
+                        <img src="images/star45.jpg" alt="별점45">
+                        <p>신비로운 수족관을 들여다보는 느낌을 준 책</p>
+                    </li>
+                  </ul>
+                  <div class="g_box">
+                    <div class="g_box1">
+                        <h2><span>책 소개</span></h2>
+                        <div class="g_text">
+                            <h3>우리가 빛의 속도로 갈 수 없다면</h3>
+                            <p>
+                                김초엽 / 허블 <br>
+                                ‘한국 SF의 우아한 계보’ 김초엽 작가의 <br>
+                                첫번째 단편 소설집.
+                            </p>
+                        </div><!--g_text-->
+                    </div><!--g_box1-->
+                    <div class="g_box2">
+                        <h2><span>추천평</span></h2>
+                        <p>
+                            이 책은 지극히 공상과학적이면서도 지극히 현실적인 이야기에요. <br>
+                            인간이 가진 가장 아름다운 것, <br>
+                            사랑과 연대가 살아숨쉬는 이야기를 만나보세요.
+                        </p>
+                    </div><!--g_box2-->
+                  </div><!--g_box-->
+              </div><!--tab_text-->
+            </div><!--tab2-->
+            
+            <div id="tab3" class="tab_content">
+                <!--Content-->
+              <h1><img src="images/recom3.jpg" alt="추천책3"></h1>
+              <div class="tab_text">
+                  <ul>
+                      <li>
+                          <img src="images/star5.jpg" alt="별점5">
+                          <p>아기자기하고 따뜻한 감성에 마음이 몽글몽글해지는 책</p>
+                      </li>
+                      <li>
+                        <img src="images/star45.jpg" alt="별점45">
+                        <p>가볍게 여러번 읽어도 좋을 듯한 책</p>
+                    </li>
+                    <li>
+                        <img src="images/star45.jpg" alt="별점45">
+                        <p>눈 오는 날 어울리는 포근한 이야기</p>
+                    </li>
+                  </ul>
+                  <div class="g_box">
+                    <div class="g_box1">
+                        <h2><span>책 소개</span></h2>
+                        <div class="g_text">
+                            <h3>폴라리또와 나</h3>
+                            <p>
+                                김져니 / 독립출판 <br>
+                                작은 북극곰 폴라리또의 이야기, <br>
+                                그리고 타인이 아닌 우리의 이야기.
+                            </p>
+                        </div><!--g_text-->
+                    </div><!--g_box1-->
+                    <div class="g_box2">
+                        <h2><span>추천평</span></h2>
+                        <p>
+                            못말리게 사랑스럽고 귀여운 친구 폴라리또, <br>
+                            이야기가 끝날 때쯤이면 당신도 이 작은 북극곰의 친구가 되어 있을 거예요.
+                        </p>
+                    </div><!--g_box2-->
+                  </div><!--g_box-->
+              </div><!--tab_text-->
+            </div><!--tab3-->
+        </div><!--tab_container-->
+    </div><!--genre-->
+    <div id="bookclub">
+        <h2 class="sub_title">BOOKCLUB</h2>
+        <P class="sub_info">이솔책방에서 진행중인 온라인 독서모임</P>
+        <div class="bclub">
+            <div class="bc1 hover">
+                <img src="images/bookclub1.jpg" alt="북클럽1">
+                <div class="hover_box">
+                    <div class="tb text_box1">
+                        <h3>33독서단</h3>
+                        <p>
+                            하루 30분 일주일에 3번 책 읽기 <br>
+                            매주 월, 수, 금
+                        </p>
+                    </div><!--text_box1-->
+                </div><!--hover_box-->
+                <a href="sub4.html#bookclub_"><img src="images/plus_btn1.png" alt="더보기버튼1" class="btn1"></a>
+            </div><!--bc1-->
+            <div class="bc2 hover">
+                <img src="images/bookclub2.jpg" alt="북클럽2">
+                <div class="hover_box">
+                    <div class="tb text_box2">
+                        <h3>Back to the Classic</h3>
+                        <p>
+                            고전 책 읽기 모임
+                        </p>
+                    </div><!--text_box2-->
+                </div><!--hover_box-->
+                <a href="sub4.html#bookclub_"><img src="images/plus_btn1.png" alt="더보기버튼1" class="btn1"></a>
+            </div><!--bc2-->
+            <div class="bc3 hover">
+                <img src="images/bookclub3.jpg" alt="북클럽3">
+                <div class="hover_box">
+                    <div class="tb text_box3">
+                        <h3>책밤</h3>
+                        <p>
+                            책과 함께하는 밤, <br>
+                            심야 독서모임
+                        </p>
+                    </div><!--text_box3-->
+                </div><!--hover_box-->
+                <a href="sub4.html#bookclub_"><img src="images/plus_btn1.png" alt="더보기버튼1" class="btn1"></a>
+            </div><!--bc3-->
+            <div class="bc4 hover">
+                <img src="images/bookclub4.jpg" alt="북클럽4">
+                <div class="hover_box">
+                    <div class="tb text_box4">
+                        <h3>나의 책일기</h3>
+                        <p>
+                            책에 대한 감상을<br>
+                            나만의 일기로 만들기
+                        </p>
+                    </div><!--text_box4-->
+                </div><!--hover_box-->
+                <a href="sub4.html#bookclub_"><img src="images/plus_btn1.png" alt="더보기버튼1" class="btn1"></a>
+            </div><!--bc4-->
+            <div class="bc5 hover">
+                <img src="images/bookclub5.jpg" alt="북클럽5">
+                <div class="hover_box">
+                    <div class="tb text_box5">
+                        <h3>월요독서회</h3>
+                        <p>
+                           매주 월요일은 책 읽는 날
+                        </p>
+                    </div><!--text_box5-->
+                </div><!--hover_box-->
+                <a href="sub4.html#bookclub_"><img src="images/plus_btn1.png" alt="더보기버튼1" class="btn1"></a>
+            </div><!--bc5-->
+            <div class="bc6 hover">
+                <img src="images/bookclub6.jpg" alt="북클럽6">
+                <div class="hover_box">
+                    <div class="tb text_box6">
+                        <h3>세랑in</h3>
+                        <p>
+                           정세랑월드를 사랑하는 <br>
+                           사람들의 정세랑 읽기
+                        </p>
+                    </div><!--text_box6-->
+                </div><!--hover_box-->
+                <a href="sub4.html#bookclub_"><img src="images/plus_btn1.png" alt="더보기버튼1" class="btn1"></a>
+            </div><!--bc6-->
+        </div><!--bclub-->
+    </div><!--bookclub-->
+    <div id="program">
+        <div id="prog">
+            <h2 class="sub_title">UPCOMING PROGRAM</h2>
+            <P class="sub_info">이솔에서 곧 만나볼 수 있는 프로그램</P>
+            <div class="p_content">
+                <div class="prog1"  data-aos="fade-up-right" data-aos-duration="500">
+                    <img src="images/program1.jpg" alt="프로그램1">
+                    <div class="p_text">
+                        <h3>독립출판 워크숍 3기 (5주 과정)</h3>
+                        <p>
+                            - 매주 금요일 8PM (2022.07.08 개강) <br>
+                            - ZOOM 화상 회의실 <br>
+                            - 정원 8명 (200,000원)
+                        </p>
+                    </div><!--p_text-->
+                    <a href="sub3.html#workshop_"><img src="images/plus_btn2.png" alt="더보기버튼2" class="p_btn"></a>
+                </div><!--prog1-->
+                <div class="prog2"  data-aos="fade-up-left" data-aos-duration="500" data-aos-delay="200">
+                    <img src="images/program2.jpg" alt="프로그램2">
+                    <div class="p_text">
+                        <h3>정시우 『배우의 방』 북토크</h3>
+                        <p>
+                            - 2022.07.23 (토) 3PM <br>
+                            - 이솔책방 소나무회의실 <br>
+                            - 선착순 30명 (무료)
+                        </p>
+                    </div><!--p_text-->
+                    <a href="sub3.html#booktalk_"><img src="images/plus_btn2.png" alt="더보기버튼2" class="p_btn"></a>
+                </div><!--prog2-->
+            </div><!--p_content-->
+        </div><!--prog-->
+    </div><!--program-->
+    <div id="magazine">
+        <h2 class="sub_title">MAGAZINE</h2>
+        <P class="sub_info">이솔책방 자체 제작 월간지 월간이솔</P>
+        <div class="m_img" data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="800">
+            <img src="images/magazine1.jpg" alt="월간이솔1" class="m1">
+            <img src="images/magazine2.jpg" alt="월간이솔2" class="m2">
+            <img src="images/magazine3.jpg" alt="월간이솔3" class="m3">
+        </div><!--m_img-->
+        <p><a href="sub4.html#magazine_" class="m_plus">월간이솔 더보기</a></p>
+    </div><!--magazine-->
+    <div id="footer">
+        <div id="footer_inner">
+            <ul class="sns">
+                <li><a href="#"><img src="images/sns1.png" alt="sns1"></a></li>
+                <li><a href="#"><img src="images/sns2.png" alt="sns2"></a></li>
+                <li><a href="#"><img src="images/sns3.png" alt="sns3"></a></li>
+                <li><a href="#"><img src="images/sns4.png" alt="sns4"></a></li>
+            </ul>
+            <div class="copyright">
+                <h1><a href="index.html"><img src="images/f_logo.png" alt="푸터로고"></a></h1>
+                <div class="f_text">
+                    <ul class="c_text">
+                        <li><a href="#">이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <p>상호명 : 이솔책방 | 대표자 : 정희진 | 주소 : 경기도 파주시 회동길 252-1 바하빌딩 201호 <br>
+                        사업자번호 : 199-20-32900 | 통신판매업신고번호 : 2022-경기파주-00217
+                    </p>
+                    <p>COPYRIGHTⓒ ESOLBOOKS SERVICE INC. ALL RIGHTS RESERVED</p>
+                </div><!--f_text-->
+            </div><!--copyright-->
+        </div><!--footer_inner-->
+    </div><!--footer-->
+
+
+
+
+        <script>
+        AOS.init();
+        </script>
+        <!--3. 필수 옵션을 넣는 script부분을 body가장 끝에 넣어준다.-->
+		<!-- Initialize Swiper --><!--옵션부분 pdf파일 참조해주세요-->
+		<script>
+            var swiper = new Swiper(".mb", {
+              navigation: {
+                   nextEl: ".swiper-button-next",
+                   prevEl: ".swiper-button-prev",
+                  },//화살표를 작동하게 하는 옵션.
+              pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                  },//도트부분을 작동하게 하는 옵션.
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                },
+                loop: true,
+            });
+            
+          
+          </script>
+</body>
+</html>

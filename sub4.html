@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1450">
+    <title>이솔책방</title>
+
+    <!--애니메이션-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--css 파일-->
+    <link rel="stylesheet" href="css/sub4.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!--제이쿼리 라이브러리파일-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--서브메뉴 제이쿼리-->
+    <script type="text/javascript">
+		$(document).ready(function() {
+            $(function(){
+            $(".gnb>li").hover(function(){
+                $("#sub").stop().slideDown();
+            },//마우스 올렸을때
+            function(){
+                $("#sub").stop().slideUp();
+            });//마우스 나갔을때
+            });			
+		});
+	</script>
+</head>
+<body>
+    <div id="top">
+        <div id="top_inner">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="이솔책방 로고"></a></h1>
+            <ul class="login">
+                <li><a href="#"><img src="images/top1.png" alt="로그인"></a></li>
+                <li><a href="#"><img src="images/top2.png" alt="회원가입"></a></li>
+                <li><a href="#"><img src="images/top3.png" alt="검색"></a></li>
+            </ul>
+        </div><!--top_inner-->
+    </div><!--top-->
+    <div id="header">
+        <div id="header_inner">
+            <ul class="gnb">
+                <li><a href="sub1.html">ABOUT US</a>
+                    <div id="sub">
+                        <div id="sub_inner">
+                            <ul class="list1">
+                                <li><a href="sub1.html#esol_">이솔책방</a></li>
+                                <li><a href="sub1.html#with_">함께하는 사람들</a></li>
+                            </ul>
+                            <ul class="list2">
+                                <li><a href="sub2.html#books_">책</a></li>
+                                <li><a href="sub2.html#goods_">문구 / 잡화</a></li>
+                                <li><a href="sub2.html#egoods_">이솔굿즈</a></li>
+                            </ul>
+                            <ul class="list3">
+                                <li><a href="sub3.html#booktalk_">작가와의 만남</a></li>
+                                <li><a href="sub3.html#workshop_">워크샵 / 원데이클래스</a></li>
+                            </ul>
+                            <ul class="list4">
+                                <li><a href="sub4.html#bookclub_">이솔 북클럽</a></li>
+                                <li><a href="sub4.html#magazine_">월간이솔</a></li>
+                            </ul>
+                            <ul class="list5">
+                                <li><a href="sub5.html#notice_">공지사항</a></li>
+                                <li><a href="sub5.html#qna_">1:1 문의</a></li>
+                                <li><a href="sub5.html#review_">리뷰</a></li>
+                                <li><a href="sub5.html#event_">이벤트</a></li>
+                            </ul>
+                        </div><!--sub_inner-->
+                    </div><!--sub-->
+                </li>
+                <li><a href="sub2.html">STORE</a></li>
+                <li><a href="sub3.html">PROGRAM</a></li>
+                <li><a href="sub4.html">MEMBERSHIP</a></li>
+                <li><a href="sub5.html">COMMUNITY</a></li>
+            </ul>
+        </div><!--header_inner-->
+    </div><!--header-->
+    <div id="sub_b">
+        <h1>MEMBERSHIP<span id="bookclub_"></span></h1> 
+        <img src="images/sub_bg4.jpg" alt="서브타이틀 배경4">
+    </div><!--sub_b-->
+    <div id="bookclub">
+        <h2 class="sub_title">BOOKCLUB</h2>
+        <p class="sub_info">이솔 북클럽</p>
+        <ul class="bc_list1" data-aos="fade" data-aos-duration="800">
+            <li>
+                <img src="images/bc1.jpg" alt="북클럽1">
+                <div class="flex">
+                    <h4>33독서단</h4>
+                    <a href="#">참여하기</a>
+                </div><!--flex-->
+                <p>
+                    하루 30분 일주일에 3번, 부담없이 책 읽는 습관 만들기! <br>
+                    매주 월,수,금 오후 8시 온라인으로 만나요.  
+                </p>
+            </li>
+            <li>
+                <img src="images/bc2.jpg" alt="북클럽2">
+                <div class="flex">
+                    <h4>Back to the Classic</h4>
+                    <a href="#">참여하기</a>
+                </div><!--flex-->
+                <p>
+                    오래도록 사랑받고 있지만 혼자 읽기엔 어려운 <br>
+                    고전문학을 함께 읽는 모임입니다.
+                </p>
+            </li> 
+            <li>
+                <img src="images/bc3.jpg" alt="북클럽3">
+                <div class="flex">
+                    <h4>책밤</h4>
+                    <a href="#">참여하기</a>
+                </div><!--flex-->
+                <p>
+                    밤이 긴 사람들을 위한 심야 독서모임. <br>
+                    조용하고 편안한 책 읽기로 지친 하루를 닫는 시간입니다.
+                </p>
+            </li>  
+        </ul><!--bc_list1-->
+        <ul class="bc_list2" data-aos="fade" data-aos-duration="800">
+            <li>
+                <img src="images/bc4.jpg" alt="북클럽4">
+                <div class="flex">
+                    <h4>나의 책일기</h4>
+                    <a href="#">참여하기</a>
+                </div><!--flex-->
+                <p>
+                    책에 대한 감상을 나만의 일기로 써보는 모임입니다. <br>
+                    차곡차곡 쌓인 기록은 또 한 권의 책이 됩니다. 
+                </p>
+            </li>
+            <li>
+                <img src="images/bc5.jpg" alt="북클럽5">
+                <div class="flex">
+                    <h4>월요독서회</h4>
+                    <a href="#">참여하기</a>
+                </div><!--flex-->
+                <p>
+                    매주 월요일은 책 읽는 날! <br>
+                    책과 함께 더욱 알찬 한 주를 시작해 보아요.
+                    <span id="magazine_"></span>                  
+                </p>
+            </li> 
+            <li>
+                <img src="images/bc6.jpg" alt="북클럽6">
+                <div class="flex">
+                    <h4>세랑in</h4>
+                    <a href="#">참여하기</a>
+                </div><!--flex-->
+                <p>
+                    정세랑월드를 사랑하는 사람 모여라! <br>
+                    정세랑 작가님의 작품을 읽고 이야기 나눕니다.
+                </p>
+            </li>  
+        </ul><!--bc_list2-->
+    </div><!--bookclub-->
+    <div id="magazine">
+        <div id="magazine_inner">
+            <h2 class="sub_title">MEGAZINE</h2>
+            <p class="sub_info">월간이솔</p>
+            <div class="m_maintext" data-aos="fade" data-aos-duration="800">
+                <h4>월간이솔을 구독하고 매달 새로운 이솔의 이야기를 만나보세요!</h4>
+                <p>
+                    월간이솔은 매달 이솔책방에서 발행하는 월간지입니다. <br>
+                    이솔이 소개하는 이 달의 책, 책 문화 프로그램 후기, 다가오는 프로그램, 북클럽 일정 등 책방 소식, <br>
+                    그리고 이솔과 함께하는 사람들의 이야기와 책방지기들이 직접 쓴 책방일지까지. <br>
+                    다채롭고 특별한 이솔의 이야기를 가장 먼저 만나보실 수 있습니다.
+                </p>
+            </div><!--m_text-->
+            <p class="m_btn">구독권</p>
+            <ul class="m_contents">
+                <li data-aos="zoom-out-right" data-aos-duration="500">
+                    <img src="images/mz1.jpg" alt="월간이솔구독1">
+                    <div class="m_text">
+                       <h5>1회 구독</h5>
+                       <p>이 달의 월간이솔 구매하기</p>
+                       <div class="buy">
+                        <p>1회</p>
+                        <h6>6,000원</h6>
+                        <a href="#">구매</a>
+                       </div><!--buy--> 
+                    </div><!--m_text-->
+                </li>
+                <li data-aos="zoom-out-up" data-aos-duration="500">
+                    <img src="images/mz2.jpg" alt="월간이솔구독2">
+                    <div class="m_text">
+                       <h5>매월 정기구독</h5>
+                       <p>매월 정기 결제로 월간이솔 구독하기 <br>
+                       (2회 구독 이후 해지 가능)
+                        </p>
+                       <div class="buy">
+                        <p>1회당</p>
+                        <h6>5,500원</h6>
+                        <a href="#">구매</a>
+                       </div><!--buy--> 
+                    </div><!--m_text-->
+                </li>
+                <li data-aos="zoom-out-left" data-aos-duration="500">
+                    <img src="images/mz3.jpg" alt="월간이솔구독3">
+                    <div class="m_text">
+                       <h5>6개월/1년 정기구독</h5>
+                       <p>한 번 결제로 6개월/1년 구독하기</p>
+                       <div class="buy">
+                        <p>6개월 <br> 1년 </p>
+                        <h6>33,000원 <br> 60,000원</h6>
+                        <a href="#">구매</a>
+                       </div><!--buy--> 
+                    </div><!--m_text-->
+                </li>
+            </ul><!--m_contents-->
+            <p class="m_btn">유의사항</p>
+            <p class="notice">
+                · 구독권 결제는 이솔책방 회원가입 후 가능합니다. <br>
+                · 월간이솔은 매월 25일 일괄 발송됩니다. 25일 0시 이후 결제시 익월 25일에 익월호가 발송됩니다. <br>
+                · 구독권 취소는 해당호 발송 전날인 24일 23시 59분까지 가능합니다. <br>
+                · 이월호는 스토어 메뉴에서 구매 가능합니다. <br>
+                · 6개월/1년 정기구독권 구매시 부분환불은 불가합니다.
+            </p>
+        </div><!--magazine_inner-->
+    </div><!--magazine-->
+    <div id="footer"> 
+        <div id="footer_inner">
+            <ul class="sns">
+                <li><a href="#"><img src="images/sns1.png" alt="sns1"></a></li>
+                <li><a href="#"><img src="images/sns2.png" alt="sns2"></a></li>
+                <li><a href="#"><img src="images/sns3.png" alt="sns3"></a></li>
+                <li><a href="#"><img src="images/sns4.png" alt="sns4"></a></li>
+            </ul>
+            <div class="copyright">
+                <h1><a href="index.html"><img src="images/f_logo.png" alt="푸터로고"></a></h1>
+                <div class="f_text">
+                    <ul class="c_text">
+                        <li><a href="#">이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <p>상호명 : 이솔책방 | 대표자 : 정희진 | 주소 : 경기도 파주시 회동길 252-1 바하빌딩 201호 <br>
+                        사업자번호 : 199-20-32900 | 통신판매업신고번호 : 2022-경기파주-00217
+                    </p>
+                    <p>COPYRIGHTⓒ ESOLBOOKS SERVICE INC. ALL RIGHTS RESERVED</p>
+                </div><!--f_text-->
+            </div><!--copyright-->
+        </div><!--footer_inner-->
+    </div><!--footer-->
+
+    <script>
+        AOS.init();
+        </script>
+</body>
+</html>
